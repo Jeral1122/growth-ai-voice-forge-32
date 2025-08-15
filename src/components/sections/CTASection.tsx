@@ -30,7 +30,7 @@ export const CTASection = () => {
               Book this week and receive a FREE automation consultation (worth $1,000) — we'll map out your custom AI transformation plan.
             </p>
             
-            <Button onClick={handleGetStrategy} className="bg-neon-green hover:bg-neon-green/90 text-black font-semibold text-base sm:text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/20 group px-6 sm:px-8 md:px-12 py-3 sm:py-4 w-full sm:w-auto max-w-full">
+            <Button onClick={handleGetStrategy} className="bg-neon-green hover:bg-neon-green/90 text-black font-semibold text-base sm:text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/20 group px-4 sm:px-6 md:px-8 py-3 sm:py-4 w-full sm:w-auto max-w-sm mx-auto">
               <span>Get Your Custom AI Strategy</span>
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 flex-shrink-0" />
             </Button>
