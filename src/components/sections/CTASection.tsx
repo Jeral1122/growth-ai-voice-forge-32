@@ -31,7 +31,7 @@ export const CTASection = () => {
             </p>
             
             <Button onClick={handleGetStrategy} className="bg-neon-green hover:bg-neon-green/90 text-black font-semibold text-base sm:text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/20 group px-6 sm:px-8 md:px-12 py-3 sm:py-4 w-full sm:w-auto max-w-full">
-              <span className="whitespace-nowrap">Get Your Custom AI Strategy</span>
+              <span>Get Your Custom AI Strategy</span>
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 flex-shrink-0" />
             </Button>
             
