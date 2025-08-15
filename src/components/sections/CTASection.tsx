@@ -31,8 +31,8 @@ export const CTASection = () => {
             </p>
             
             <div className="px-2">
-              <Button onClick={handleGetStrategy} className="bg-neon-green hover:bg-neon-green/90 text-black font-semibold text-sm sm:text-base md:text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/20 group py-3 px-4 w-full max-w-xs sm:max-w-sm mx-auto flex items-center justify-center">
-                <span className="whitespace-nowrap overflow-hidden text-ellipsis">Get Your Custom AI Strategy</span>
+              <Button onClick={handleGetStrategy} className="bg-neon-green hover:bg-neon-green/90 text-black font-semibold text-sm sm:text-base md:text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/20 group py-3 px-3 w-full max-w-sm mx-auto flex items-center justify-center">
+                <span className="text-center leading-tight">Get Your Custom AI Strategy</span>
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1 flex-shrink-0" />
               </Button>
             </div>
