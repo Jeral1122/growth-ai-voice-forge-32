@@ -1,0 +1,122 @@
+
+/* Responsive typography and layout */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  
+  /* Better spacing for mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Improved mobile text sizing */
+  h1 {
+    line-height: 1.2;
+  }
+  
+  h2, h3 {
+    line-height: 1.3;
+  }
+  
+  /* Mobile button improvements */
+  button {
+    min-height: 44px; /* Better touch targets */
+  }
+  
+  /* Mobile card spacing */
+  .grid {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  /* Tablet specific styles */
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 768px) {
+  /* Ensure mobile nav doesn't interfere with content */
+  body {
+    padding-top: 0;
+  }
+  
+  /* Better mobile menu positioning */
+  .fixed {
+    position: fixed;
+  }
+  
+  /* Mobile image optimization */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile overflow handling */
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects on touch devices */
+  .hover\:scale-105:hover {
+    transform: none;
+  }
+  
+  /* Better touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Improve mobile scrolling */
+@media (max-width: 768px) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Better mobile section spacing */
+  section {
+    overflow-x: hidden;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Optimize for retina displays */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}

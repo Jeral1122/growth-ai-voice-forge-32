@@ -1,0 +1,218 @@
+/* Mobile-specific optimizations */
+
+/* Touch-friendly interactions */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Mobile viewport handling */
+@viewport {
+  width: device-width;
+  initial-scale: 1.0;
+  minimum-scale: 1.0;
+  maximum-scale: 5.0;
+  user-scalable: yes;
+}
+
+/* Mobile layout improvements */
+@media (max-width: 768px) {
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Mobile container improvements */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Mobile grid improvements */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Mobile spacing utilities */
+  .mobile-px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mobile-py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Mobile text sizing */
+  .mobile-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .mobile-text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .mobile-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  
+  /* Mobile button improvements */
+  .mobile-btn-full {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Mobile card improvements */
+  .mobile-card {
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+  }
+  
+  /* Mobile hero adjustments */
+  .mobile-hero {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Mobile navigation spacing */
+  .mobile-nav-spacing {
+    padding-top: 5rem; /* Account for fixed mobile nav */
+  }
+  
+  /* Mobile image optimizations */
+  .mobile-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Mobile form improvements */
+  .mobile-form input,
+  .mobile-form textarea,
+  .mobile-form select {
+    width: 100%;
+    font-size: 16px; /* Prevent iOS zoom */
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Mobile modal improvements */
+  .mobile-modal {
+    width: 95vw;
+    max-width: 95vw;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+  
+  /* Mobile table improvements */
+  .mobile-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  /* Mobile flex improvements */
+  .mobile-flex-col {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Mobile landscape optimizations */
+@media (max-width: 768px) and (orientation: landscape) {
+  .mobile-landscape-adjust {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Smaller text in landscape */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 375px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Extra small mobile adjustments */
+  .xs-text-sm {
+    font-size: 0.75rem;
+  }
+  
+  .xs-p-2 {
+    padding: 0.5rem;
+  }
+  
+  /* Very small button adjustments */
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+}
+
+/* Mobile-first approach utilities */
+.mobile-first {
+  /* Start with mobile styles, then enhance for larger screens */
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .mobile-first {
+    padding: 1.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-first {
+    padding: 2rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Accessibility improvements for mobile */
+@media (max-width: 768px) {
+  /* Larger tap targets */
+  a, button, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Better focus indicators on mobile */
+  :focus {
+    outline: 2px solid #A4FF00;
+    outline-offset: 2px;
+  }
+  
+  /* Mobile-friendly hover states */
+  .mobile-hover:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
