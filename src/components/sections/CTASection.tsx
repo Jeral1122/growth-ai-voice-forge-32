@@ -24,18 +24,20 @@ export const CTASection = () => {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-gradient-to-r from-charcoal/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 sm:p-12 text-center">
-            <p className="text-xl text-neon-green font-semibold mb-8 leading-relaxed text-stone-50 sm:text-2xl">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="bg-gradient-to-r from-charcoal/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 sm:p-8 md:p-12 text-center">
+            <p className="text-xl text-neon-green font-semibold mb-8 leading-relaxed text-stone-50 sm:text-2xl px-2">
               Book this week and receive a FREE automation consultation (worth $1,000) — we'll map out your custom AI transformation plan.
             </p>
             
-            <Button onClick={handleGetStrategy} className="bg-neon-green hover:bg-neon-green/90 text-black font-semibold text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/20 group py-[20px] px-4 sm:px-8 md:px-16 lg:px-24 w-full max-w-md mx-auto">
-              Get Your Custom AI Strategy
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <div className="px-2">
+              <Button onClick={handleGetStrategy} className="bg-neon-green hover:bg-neon-green/90 text-black font-semibold text-base sm:text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-green/20 group py-4 px-6 w-full max-w-sm mx-auto">
+                <span className="text-center">Get Your Custom AI Strategy</span>
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 flex-shrink-0" />
+              </Button>
+            </div>
             
-            <p className="text-gray-400 font-open-sans mt-6 text-lg">
+            <p className="text-gray-400 font-open-sans mt-6 text-base sm:text-lg px-2">
               Limited to 3 new clients per month. Secure your spot now.
             </p>
           </div>
